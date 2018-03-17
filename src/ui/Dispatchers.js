@@ -2,8 +2,8 @@ import React from 'react';
 
 const Dispatchers = () => (
   <div className="dispatchers">
-    <input className="dispatch-input" />
-    <button className="dispatch-button">Dispatch</button>
+    <button className="dispatch-button"><i className="fa fa-rocket" /></button>
+    <button className="dispatch-button"><i className="fa fa-undo" /></button>
   </div>
 );
 

@@ -1,19 +1,19 @@
 {
   "name": "thinking-in-redux",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "private": false,
   "dependencies": {
-    "normalize.css": "8.0.0",
-    "ramda": "0.25.0",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
-    "react-redux": "5.0.7",
-    "react-scripts": "1.1.1",
-    "redux": "3.7.2",
-    "redux-devtools": "3.4.1",
-    "redux-devtools-inspector": "0.11.3",
-    "redux-observable": "0.18.0",
-    "rxjs": "5.5.6"
+    "ajv": "^6.12.2",
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^8.0.0",
+    "ramda": "^0.25.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "^1.1.1",
+    "redux": "^3.7.2",
+    "redux-devtools": "^3.4.1",
+    "redux-devtools-inspector": "^0.11.3"
   },
   "scripts": {
     "start": "react-scripts start",
