@@ -7,6 +7,7 @@ const BOOKS_URL = 'https://www.googleapis.com/books/v1/volumes?q=redux';
 
 export const booksMiddleware = () => (next) => (action) => {
   next(action);
+  console.log('booksMiddleware', action.type)
 
   switch(action.type) {
     case FETCH_BOOKS:
