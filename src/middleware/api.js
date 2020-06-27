@@ -1,12 +1,11 @@
 import {API_REQUEST, apiSuccess, apiError} from '../actions/api';
 
 export const apiMiddleware = ({dispatch}) => (next) => (action) => {
+  console.log('apiMiddleware', action);
   next(action);
-  console.log('apiMiddleware', action.type)
 
   if(action.type.includes(API_REQUEST)) {
     const {url, method, feature} = action.meta;
-
 
     fetch(url, {method})
       .then(response => response.json())

@@ -5,6 +5,8 @@ import {uiReducer} from '../reducers/ui';
 import {notificationsReducer} from '../reducers/notification';
 import {booksMiddleware} from '../middleware/books';
 import {apiMiddleware} from '../middleware/api';
+import {normalizeMiddleware} from '../middleware/normalize';
+import {notificationMiddleware} from '../middleware/notification';
 import {applyMiddleware} from 'redux';
 
 // shape the state structure
@@ -17,6 +19,8 @@ const rootReducer = combineReducers({
 // create the core middleware array
 const coreMiddleware = [
   apiMiddleware,
+  normalizeMiddleware,
+  notificationMiddleware,
 ];
 
 // const create feature middleware array
